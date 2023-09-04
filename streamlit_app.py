@@ -19,7 +19,7 @@ crypto_list = ['BTC', 'ETH', 'LTC']
 symbol = 'BITSTAMP_SPOT_BTC_USD'
 selected_crypto = st.selectbox('Select a cryptocurrency:', crypto_list)
 url = "https://rest.coinapi.io/v1/ohlcv/BITSTAMP_SPOT_BTC_USD/history"
-api_key = "EB519846-6527-4BAA-AA7D-FDD4E2CDF8E3"
+
 
 @st.cache_data(ttl=86400)
 def get_historical_data(symbol):
